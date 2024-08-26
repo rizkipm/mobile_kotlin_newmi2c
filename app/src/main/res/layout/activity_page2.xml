@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Page2Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,41 +13,39 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center|center_horizontal"
-            android:layout_marginTop="85sp"
-            android:text="Hello World!"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:text="Selamat Datang di Page Ke 2"
             android:textAlignment="center"
-            android:textSize="34sp"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnClickHere"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="25sp"
-            android:text="Click Here!" />
-
-        <TextView
-            android:id="@+id/txtSelamatDatang"
+        <EditText
+            android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30sp"
-            android:textAlignment="center"
-            android:textColor="#C51F1F"
-            android:textStyle="bold|italic" />
+            android:layout_marginTop="35sp"
+            android:ems="10"
+            android:hint="Input Username"
+            android:inputType="text" />
 
         <Button
-            android:id="@+id/btnMenuPage2"
+            android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30sp"
-            android:text="Menu Page 2" />
+            android:layout_marginTop="15sp"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/txtHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F44336"
+            android:textStyle="italic" />
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
