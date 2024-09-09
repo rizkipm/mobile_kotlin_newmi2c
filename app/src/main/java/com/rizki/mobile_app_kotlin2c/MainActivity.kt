@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     private  lateinit var  txtWelcome : TextView
     private lateinit var  btnMenuPage2 : Button
     private lateinit var  btnLoginPage : Button
+    private lateinit var  btnListView : Button
+    private lateinit var  btnRecycle : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         txtWelcome = findViewById(R.id.txtSelamatDatang)
         btnMenuPage2 = findViewById(R.id.btnMenuPage2)
         btnLoginPage = findViewById(R.id.btnLoginPage)
+        btnListView = findViewById(R.id.btnListView)
+        btnRecycle = findViewById(R.id.btnRecycle)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -58,6 +62,23 @@ class MainActivity : AppCompatActivity() {
             //intent expilicit : pindah keluar app dan manggil apps lain
             val intentMenu2 = Intent(this@MainActivity,
                 LoginPageActivity::class.java)
+            startActivity(intentMenu2)
+        }
+
+        btnListView.setOnClickListener(){
+            //intent --> pindah dari satu activity ke activity lain
+            //intent implicit : pindah yg ada project
+            //intent expilicit : pindah keluar app dan manggil apps lain
+            val intentMenu2 = Intent(this@MainActivity,
+                ListViewActivity::class.java)
+            startActivity(intentMenu2)
+        }
+        btnRecycle.setOnClickListener(){
+            //intent --> pindah dari satu activity ke activity lain
+            //intent implicit : pindah yg ada project
+            //intent expilicit : pindah keluar app dan manggil apps lain
+            val intentMenu2 = Intent(this@MainActivity,
+                RecycleViewActivity::class.java)
             startActivity(intentMenu2)
         }
     }

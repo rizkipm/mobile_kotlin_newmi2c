@@ -53,6 +53,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login Page" />
+
+        <Button
+            android:id="@+id/btnListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List View" />
+
+        <Button
+            android:id="@+id/btnRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recycle View" />
     </LinearLayout>
 
 
