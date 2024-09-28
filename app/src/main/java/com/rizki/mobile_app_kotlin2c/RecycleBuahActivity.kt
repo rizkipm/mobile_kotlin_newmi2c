@@ -20,7 +20,7 @@ class RecycleBuahActivity : AppCompatActivity() {
         rv_buah = findViewById(R.id.rv_buah)
 
         rv_buah.layoutManager = GridLayoutManager(this, 1)
-        val adapter = BuahAdapter(MockList.getModel() as ArrayList<ModelBuah>)
+        val adapter = BuahAdapter(MockList.getModel() as ArrayList<ModelBuah>, this)
         rv_buah.adapter = adapter
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
